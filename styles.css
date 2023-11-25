@@ -1,0 +1,114 @@
+body{
+    background-color: #0b0072;
+    margin: 0;
+}
+header{
+    background-color: #363636;
+    height: 50px;
+    width: 100%;
+}
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    color: #fff;
+    margin: 0;
+}
+.container-scores{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.input-scores{
+    width: 20px;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    font-weight: 600;
+}
+main{
+    margin-top: 20px;
+}
+
+.grid-container-game{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+}
+
+.game-status{
+    background-color: #cd0000;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-game-options{
+    background-color: #8d0000;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+.boton{
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.boton:hover{
+    filter:opacity(.6);
+}
+#piedra{
+    background-image: url(img/piedra.png);
+    background-repeat: round;
+    margin-left: 20px;
+}
+#papel{
+    background-image: url(img/papel.png);
+    background-size: cover;
+    background-repeat: round;
+}
+#tijera{
+    background-image: url(img/tijera.png);
+    background-size: cover;
+    background-repeat: round;
+    margin-right: 20px;
+}
+.game-output{
+    background-color: #750000;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+#output, #estado{
+    height: 50px;
+    width: 70%;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid black;
+}
+#estado{
+    font-size: 18px;
+}
+footer{
+    background-color: #000731;
+    height: 50px;
+    display:grid;
+    margin-top: 20px;
+    justify-content: center;
+}
+footer p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}

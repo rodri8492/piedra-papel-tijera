@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra papel o tijera</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-scores">
+                <div class="player-score">
+                    <h1>Puntaje Jugador</h1>
+                    <input class="input-scores" type="text" id="puntaje-jugador" readonly>
+                </div>
+                <div class="cpu-score">
+                    <h1>Puntaje CPU</h1>
+                    <input class="input-scores" type="text" id="puntaje-cpu" readonly>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="grid-container-game">
+            <div class="game-status">
+                <input type="text" id="estado" value="Click para iniciar" readonly>
+            </div>
+            <div class="grid-game-options">
+                <button class="boton" id="piedra"></button>
+                <button class="boton" id="papel"></button>
+                <button class="boton" id="tijera"></button>
+            </div>
+            <div class="game-output">
+                <input type="text" id="output" readonly>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©2023 Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
